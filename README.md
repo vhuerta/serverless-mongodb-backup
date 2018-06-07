@@ -1,4 +1,4 @@
-# Serverless LAMBDA backupmongo DB
+# Serverless LAMBDA backup MONGODB
 
 _____________________________
 ## Instructions for uploading
