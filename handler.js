@@ -40,7 +40,7 @@ module.exports.backup = (event, context, cb) => {
 
   // Use the mongodump binary to get the data from MongoDB
   exec(
-    `mongodump -h ${host} -d ${dbName} -u ${username} -p ${pass} -o ${folderName}`,
+    `mongodump -h ${host} -d ${dbName} -u ${username} -p ${pass} -o ${folderName} --authenticationDatabase admin`,
     (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
